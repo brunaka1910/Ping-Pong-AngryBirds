@@ -3,15 +3,22 @@ class Cpu{
         this.c = c;
         this.bola = bola;        
         this.vel=8;
-        this.largura = 20;
-        this.altura = 100;
-        this.x= (c.canvas.width - this.largura - 5);
+        this.largura = 80;
+        this.altura = 90;
+        this.x= (c.canvas.width - this.largura - 20);
         this.y=(c.canvas.height/2)-(this.altura/2);
         this.inicioY = this.y;
         this.meioY = Math.random() * this.altura;
+
+        this.bolaImagem = new Image ();
+        this.bolaImagem.width = 90;
+        this.bolaImagem.height = 90;
+        this.bolaImagem.src = "assets/amarelo.png";
+        this.bolaImagem.addEventListener ('load' , () =>{
+            this.draw();
         
 
-    }
+        })}
     management()
     {
         if ((this.bola.dirX > 0) && (this.bola.x > (this.c.canvas.width/2)))
@@ -43,8 +50,10 @@ class Cpu{
     }
     draw(){
         this.management();
-        this.c.fillStyle = "#B43232";
-        this.c.fillRect(this.x, this.y, this.largura, this.altura);
+       // this.c.fillStyle = "#B43232";
+       // this.c.fillRect(this.x, this.y, this.largura, this.altura);
+
+       this.c.drawImage(this.bolaImagem, this.x, this.y, this.bolaImagem.width, this.bolaImagem.height);
     }
    
 }

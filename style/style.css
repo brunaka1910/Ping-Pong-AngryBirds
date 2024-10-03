@@ -5,13 +5,16 @@
 canvas {
     border: 5px solid #152c17;
     border-radius: 10px;
-    background-color: #93e497;
+    background-image: url("../assets/fundo2.png");
+    background-size: 900px;
     justify-content: center;
     align-items: center;
     margin-left: 0%;
     margin: 0 auto;
     margin-bottom: -13px;
-    
+      background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 header{
     margin-top: 0.4%;
@@ -33,7 +36,8 @@ body p{
 }
 body .gradedojogo
 {
-    background-image: url("../assets/raquete-pingpong.png");
+    background-image: url("../assets/estilingue.png");
+    background-size: 290px;
 
 }
 footer{

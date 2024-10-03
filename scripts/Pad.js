@@ -2,15 +2,15 @@ class Pad{
     constructor(c, keyboard){
         this.c = c;
         this.keyboard = keyboard;
-        this.x=5;
+        this.x=2;
         this.vel=5;
-        this.largura = 80;
-        this.altura = 100;
+        this.largura = 90;
+        this.altura = 90;
         this.y=(c.canvas.height/2)-(this.altura/2);
         
         this.padImagem = new Image ();
-        this.padImagem.width = 80;
-        this.padImagem.height = 100;
+        this.padImagem.width = 120;
+        this.padImagem.height = 120;
         this.padImagem.src = "assets/vermelho.png";
         this.padImagem.addEventListener ('load' , () =>{
             this.draw();
