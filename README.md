@@ -14,4 +14,4 @@ O jogo foi desenvolvido utilizando as tecnologias HTML5, CSS e JavaScript, atrav
 <br>
  O deploy do aplicativo foi realizado através do Vercel. Para acessá-lo, basta clicar <a href="https://ping-pong-angry-birds.vercel.app/" target="_blank"> aqui. </a>
  <br>
- <img src="assets/tela-do-jogo.png">
+ <img src=".../assets/tela-do-jogo.png">
